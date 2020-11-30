@@ -9,7 +9,7 @@ class SeedRand {
     std::array<uint32_t, 4> mState;
 
    public:
-    SeedRand(uint32_t seed);
+    SeedRand(uint32_t seed = 0);
     SeedRand(std::array<uint32_t, 4> state);
 
     uint32_t getU32();
