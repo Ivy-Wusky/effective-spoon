@@ -1,6 +1,6 @@
 #include "SeedRand.h"
 
-SeedRand::SeedRand(uint32_t seed = 0) {
+SeedRand::SeedRand(uint32_t seed) {
     for (int i = 0; i < 4; i++) {
         mState[i] = (uint32_t)(0x6C078965 * (seed ^ (seed >> 30)) + i + 1);
         seed = mState[i];
